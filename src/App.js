@@ -60,20 +60,82 @@ class App extends Component {
   })
   }
 
+  addAdmin = () => {
+    // Find the add new admin form 
+    const addAdminForm = document.querySelector('.new-admin-form') 
+  
+    // Process the sumbission of the form 
+    addAdminForm.addEventListener('submit', function(event) {     
+      // Stopping the normal action of the form so that we can handle things here     
+      event.preventDefault()     
+      console.log(event.target)     
+      console.log("Submitting the new admin form")         
+      var formData = new FormData(addAdminForm)         
+      console.log("form data")      
+      // Posting that data to our API     
+      axios.post('http://localhost:3330/add-admin', formData)
+  })
+  }
+
+  addDoctor = () => {
+    // Find the add new doctor form 
+    const addDoctorForm = document.querySelector('.new-doctor-form') 
+  
+    // Process the sumbission of the form 
+    addDoctorForm.addEventListener('submit', function(event) {     
+      // Stopping the normal action of the form so that we can handle things here     
+      event.preventDefault()     
+      console.log(event.target)     
+      console.log("Submitting the new doctor form")         
+      var formData = new FormData(addDoctorForm)         
+      console.log("form data")      
+      // Posting that data to our API     
+      axios.post('http://localhost:3330/add-doctor', formData)
+  })
+  }
+
+  addPatient = () => {
+    // Find the add new patient form 
+    const addPatientForm = document.querySelector('.new-patient-form') 
+  
+    // Process the sumbission of the form 
+    addPatientForm.addEventListener('submit', function(event) {     
+      // Stopping the normal action of the form so that we can handle things here     
+      event.preventDefault()     
+      console.log(event.target)     
+      console.log("Submitting the new patient form")         
+      var formData = new FormData(addPatientForm)         
+      console.log("form data")      
+      // Posting that data to our API     
+      axios.post('http://localhost:3330/add-patient', formData)
+  })
+  }
+
   render() {
     console.log("This page is rendering")
     return(
       <div className= "login-page">
       <BrowserRouter>
-      <h1>MAC</h1>
-      <h2>Medical Appointments & Consultations</h2>
+      <header>
+         <h1>MAC</h1>
+         <h2>Medical Appointments & Consultations</h2>
+      </header>
       
-      <nav>
-      <h3>User Login</h3>
-      <Link to='/admin-login'><button>Login as an Admin</button></Link>
-      <Link to='/doctor-login'><button>Login as a Doctor</button></Link>
-      <Link to='/patient-login'><button>Login as a Patient</button></Link>
-      </nav>
+      <div class="nav-bar">
+         <a href="#about">About</a>
+         <a href="#contacts">Contacts</a>
+         <a href="#history">History</a>
+         <div class="dropdown">
+            <button class="dropbtn">Login 
+               <i class="fa fa-caret-down"></i>
+            </button>
+           <div class="dropdown-content">
+              <Link to='/admin-login'><button>Login as an Admin</button></Link>
+              <Link to='/doctor-login'><button>Login as a Doctor</button></Link>
+              <Link to='/patient-login'><button>Login as a Patient</button></Link>
+           </div> 
+         </div>
+      </div>
 
       <Switch>
           <Route exact path="/admin-login">

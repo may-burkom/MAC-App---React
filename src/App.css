@@ -1,4 +1,4 @@
-h1,h2{
+header{
   text-align: center;
   color:purple;
 }
@@ -10,13 +10,13 @@ h3,p{
 }
 
 .login-page{
-  background-image: url('./image/bimage1.jpg');
+  /* background-image: url('./image/bimage1.jpg'); */
   background-repeat: no-repeat;
   background-size: 1400px 900px;
 }
 
 .login-form{
-  padding-left: 55%; 
+  text-align: center; 
 }
 
 button{
@@ -31,4 +31,74 @@ nav{
   display:flex;
   float: right;
   background-color: grey;
+}
+
+.nav-bar {
+  text-align: center;
+  justify-content: space-between;
+  word-spacing: 30px;
+  font-size: large;
+  overflow: hidden;
+  background-color: #333;
+  margin: 30px;
+  border: 1px solid black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.nav-bar a {
+  float: center;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  justify-content: space-between;
+  word-spacing: 100px;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.nav-bar a:hover, .dropdown:hover .dropbtn {
+  background-color: purple;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
