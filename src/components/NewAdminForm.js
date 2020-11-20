@@ -13,7 +13,6 @@ const NewAdminForm = () =>{
           <div>Height: <input type="Number" name="admHeight"/></div>
           <div>Weight: <input type="Number" name="admWeight"/></div>
           <div>Telephone: <input type="Number" name="admTelephone"/></div>
-          <div>Mobile Phone: <input type="Number" name="admMobilePhone"/></div>
           <div>Email: <input type="Text" name="admEmail"/></div>
           <div>Section: <input type="Text" name="admSection"/></div>
           <div>Lot No.: <input type="Text" name="admLotNo"/></div>

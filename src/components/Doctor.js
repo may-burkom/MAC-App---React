@@ -16,12 +16,12 @@ const Doctor= () =>{
 
               <h3>Add consultation</h3>
 
-              <div>Patient Code: <input type="Text" name="consultPatCode"/></div>
               <div>Patient Name: <input type="Text" name="consultPatName"/></div>
               <div>Date: <input type="Datetime-local" name="consultDate"/></div>
               <div>Room: <input type="Text" name="consultRoom"/></div>
               <div>Doctor's Name: <input type="Text" name="consultDoctor"/></div>
               <div>Consultation Summary: <textarea type="Text" name="consultReasons"/></div>
+              <div>Attached file: <input type="Text" name="consultAttachedFile"/></div>
 
               <button>Submit</button>
 

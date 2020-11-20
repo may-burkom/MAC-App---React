@@ -18,7 +18,6 @@ const NewDoctorForm = () => {
         <div>Lot No.: <input type="Text" name="docLotNo"/></div>
         <div>Street: <input type="Text" name="docStreet"/></div>
         <div>City: <input type="Text" name="docCity"/></div>
-        <div>Certificate: <input type="Text" name="docCertificate"/></div>
         <div>Licence Type: <input type="Text" name="docLicenceType"/></div>
         <div>Specialized Field: <input type="Text" name="docSpeciality"/></div>
         <button>Submit</button>

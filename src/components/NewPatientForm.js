@@ -11,7 +11,6 @@ const NewPatientForm = () =>{
           <div>Gender: <input type="Text" name="patGender"/></div>
           <div>Height: <input type="Number" name="patHeight"/></div>
           <div>Weight: <input type="Number" name="patWeight"/></div>
-          <div>Telephone: <input type="Number" name="patTelephone"/></div>
           <div>Mobile Phone: <input type="Number" name="patMobilePhone"/></div>
           <div>Email: <input type="Text" name="patEmail"/></div>
           <div>Section: <input type="Text" name="patSection"/></div>
