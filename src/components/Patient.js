@@ -5,7 +5,6 @@ const Patient = () =>{
         <h3>Patient's Page</h3>
         <form className="appointment-form">
         <h3>Add new Appointment</h3>
-        <div>Appointment ID: <input type="Text" name="appointId"/></div>
         <div>Patient Code: <input type="Text" name="appointPatCode"/></div>
         <div>Patient Name: <input type="Text" name="appointPatName"/></div>
         <div>Date: <input type="datetime-local" name="appointDate"/></div>

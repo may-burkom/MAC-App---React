@@ -3,7 +3,6 @@ const NewPatientForm = () =>{
         <div>
         <form className="new-patient-form">
           <h3>Add new Patient</h3>
-          <div>Patient Code: <input type="Text" name="patCode"/></div>
           <div>Name: <input type="Text" name="patName"/></div>
           <div>Surname: <input type="Text" name="patSurname"/></div>
           <div>Username: <input type="Text" name="patUserName"/></div>

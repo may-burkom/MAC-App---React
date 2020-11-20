@@ -16,7 +16,6 @@ const Doctor= () =>{
 
               <h3>Add consultation</h3>
 
-              <div>Appointment ID: <input type="Text" name="consultAppointId"/></div>
               <div>Patient Code: <input type="Text" name="consultPatCode"/></div>
               <div>Patient Name: <input type="Text" name="consultPatName"/></div>
               <div>Date: <input type="Datetime-local" name="consultDate"/></div>
