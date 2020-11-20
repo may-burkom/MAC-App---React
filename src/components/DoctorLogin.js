@@ -5,7 +5,7 @@ const DoctorLogin = () => {
     return(
         <div>
         <BrowserRouter>
-        <form className="login-form">
+        <form className="login-doctor-form">
         <h3>Login as a Doctor</h3>
         <div>Username: <input type="Text" name="docUsername"/></div>
         <div>Password: <input type="Text" name="docPassword"/></div>

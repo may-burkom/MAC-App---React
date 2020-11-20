@@ -6,7 +6,7 @@ const AdminLogin = (props) => {
     return(
         <div>
         <BrowserRouter>
-        <form className="login-form">
+        <form className="login-admin-form">
         <h3>Login as an Admin</h3>
         <div>Username: <input type="Text" name="admUsername"/></div>
         <div>Password: <input type="Text" name="admPassword"/></div>

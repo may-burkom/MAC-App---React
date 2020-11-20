@@ -9,9 +9,9 @@ import PatientLogin from './components/PatientLogin'
 
 class App extends Component {
 
-  getLoginData = () => {
-    // Find admin or doctor or patient login form 
-    const loginForm = document.querySelector('.login-form') 
+  getPatientLoginData = () => {
+    // Find patient login form 
+    const loginForm = document.querySelector('.login-patient-form') 
   
     // Process the sumbission of the form 
     loginForm.addEventListener('submit', function(event) {     
@@ -22,8 +22,42 @@ class App extends Component {
       var formData = new FormData(loginForm)         
       console.log("form data")      
       // Posting that data to our API     
-      axios.post('http://localhost:3330/find-user', formData)
+      axios.post('http://localhost:3330/login-patient', formData)
   })
+}
+
+getDoctorLoginData = () => {
+  // Find doctor login form 
+  const loginForm = document.querySelector('.login-doctor-form') 
+
+  // Process the sumbission of the form 
+  loginForm.addEventListener('submit', function(event) {     
+    // Stopping the normal action of the form so that we can handle things here     
+    event.preventDefault()     
+    console.log(event.target)     
+    console.log("Submitting the login form")         
+    var formData = new FormData(loginForm)         
+    console.log("form data")      
+    // Posting that data to our API     
+    axios.post('http://localhost:3330/login-doctor', formData)
+})
+}
+
+getAdminLoginData = () => {
+  // Find admin login form 
+  const loginForm = document.querySelector('.login-admin-form') 
+
+  // Process the sumbission of the form 
+  loginForm.addEventListener('submit', function(event) {     
+    // Stopping the normal action of the form so that we can handle things here     
+    event.preventDefault()     
+    console.log(event.target)     
+    console.log("Submitting the login form")         
+    var formData = new FormData(loginForm)         
+    console.log("form data")      
+    // Posting that data to our API     
+    axios.post('http://localhost:3330/login-admin', formData)
+})
 }
 
   getAppointData = () => {
