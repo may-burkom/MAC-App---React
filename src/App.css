@@ -19,18 +19,36 @@ h3,p{
   text-align: center; 
 }
 
+.appointment-form, .consultation-form{
+  text-align:center;
+}
+
 button{
   font-size: large;
 }
 
-nav{
-  margin:60px;
+.new-patient-form, .new-doctor-form, .new-admin-form{
+  float: left;
 }
 
 .exit-button{
   display:flex;
   float: right;
   background-color: grey;
+}
+
+.side-bar{
+  text-align: left;
+  float: left;
+  justify-content: space-between;
+  word-spacing: 30px;
+  font-size: large;
+  overflow: hidden;
+  background-color: #333;
+  margin: 30px;
+  border: 1px solid black;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .nav-bar {

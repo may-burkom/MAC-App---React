@@ -151,11 +151,6 @@ class App extends Component {
         </Switch>
       
       </BrowserRouter>
-      <h4>For Patients...</h4>
-      <p>This innovative app allows patients to make appointments, and review their medical consultations as well as providing the patient with his/her treatment history.</p>
-      <p>Its key service is to offer patients online consultations with medics without the need to visit a hospital.</p>
-      <h4>For Doctors..</h4>
-      <p>The Medical Appointments and Consultations app (MAC App) lets the doctor view appointments sent by the patient and send a post consultation summary back to the patient.</p>
       </div>
     )
   }
