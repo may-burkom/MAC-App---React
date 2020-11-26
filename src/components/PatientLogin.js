@@ -13,11 +13,7 @@ const PatientLogin = (props) => {
         </form>
         <Switch>
               <Route exact path="/patient-homepage">
-<<<<<<< HEAD
-                  <Patient appointmentData = {props.appointmentData}/>
-=======
                   <Patient appointData= {props.appointData}/>
->>>>>>> fcdfa3fd1f70b434bdc477defa467bcd136efd84
               </Route>
               
            </Switch>
