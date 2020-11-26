@@ -1,7 +1,7 @@
 import {BrowserRouter, Route, Link, Switch} from 'react-router-dom'
 import Patient from './Patient'
 
-const PatientLogin = () => {
+const PatientLogin = (props) => {
     return(
         <div>
         <BrowserRouter>
@@ -13,7 +13,7 @@ const PatientLogin = () => {
         </form>
         <Switch>
               <Route exact path="/patient-homepage">
-                  <Patient/>
+                  <Patient appointmentData = {props.appointmentData}/>
               </Route>
               
            </Switch>

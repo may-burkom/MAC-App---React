@@ -1,4 +1,4 @@
-const Patient = () =>{
+const Patient = (props) =>{
     return(
         <div>
         <button className="exit-button">Logout</button>
@@ -10,7 +10,7 @@ const Patient = () =>{
         <div>Room: <input type="Text" name="appointRoom"/></div>
         <div>Doctor's Name: <input type="Text" name="appointDoctor"/></div>
         <div>Reasons: <input type="Text" name="appointReasons"/></div>
-        <button>Submit</button>
+        <button onClick= {props.appointmentData} >Submit</button>
         </form>
         <h3>View previous appointments</h3>
         </div>

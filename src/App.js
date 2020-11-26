@@ -155,15 +155,15 @@ getAdminLoginData = () => {
          <h2>Medical Appointments & Consultations</h2>
       </header>
       
-      <div class="nav-bar">
+      <div className="nav-bar">
          <a href="#about">About</a>
          <a href="#contacts">Contacts</a>
          <a href="#history">History</a>
-         <div class="dropdown">
-            <button class="dropbtn">Login 
-               <i class="fa fa-caret-down"></i>
+         <div className="dropdown">
+            <button className="dropbtn">Login 
+               <i className="fa fa-caret-down"></i>
             </button>
-           <div class="dropdown-content">
+           <div className="dropdown-content">
               <Link to='/admin-login'><button>Login as an Admin</button></Link>
               <Link to='/doctor-login'><button>Login as a Doctor</button></Link>
               <Link to='/patient-login'><button>Login as a Patient</button></Link>
@@ -179,7 +179,7 @@ getAdminLoginData = () => {
             <DoctorLogin/>
           </Route>
           <Route exact path="/patient-login">
-            <PatientLogin/>
+            <PatientLogin appointmentData={this.getAppointData}/>
           </Route>
   
         </Switch>
