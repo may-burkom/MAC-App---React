@@ -3,7 +3,7 @@ import NewAdminForm from './NewAdminForm.js';
 import NewDoctorForm from './NewDoctorForm.js';
 import NewPatientForm from './NewPatientForm.js';
 
-const Admin = () =>{
+const Admin = (props) =>{
     
     return(
         <div>
@@ -17,13 +17,13 @@ const Admin = () =>{
     
          <Switch>
               <Route exact path="/new-admin">
-                  <NewAdminForm/>
+                  <NewAdminForm newAdm={props.newAdm}/>
               </Route>
               <Route exact path="/new-doctor">
-                  <NewDoctorForm/>
+                  <NewDoctorForm newDoc={props.newDoc}/>
               </Route>
               <Route exact path="/new-patient">
-                   <NewPatientForm/>
+                   <NewPatientForm newPat={props.newPat}/>
               </Route>
 
            </Switch>

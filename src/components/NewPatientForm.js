@@ -1,4 +1,4 @@
-const NewPatientForm = () =>{
+const NewPatientForm = (props) =>{
     return(
         <div>
         <form className="new-patient-form">
@@ -17,7 +17,7 @@ const NewPatientForm = () =>{
           <div>Lot No.: <input type="Text" name="patLotNo"/></div>
           <div>Street: <input type="Text" name="patStreet"/></div>
           <div>City: <input type="Text" name="patCity"/></div>
-          <button>Submit</button>
+          <button onClick={props.newPat}>Submit</button>
        </form>
         </div>
     )

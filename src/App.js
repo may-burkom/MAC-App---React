@@ -173,13 +173,17 @@ getAdminLoginData = () => {
 
       <Switch>
           <Route exact path="/admin-login">
-            <AdminLogin/>
+            <AdminLogin getAdmData={this.getAdminLoginData} newAdm={this.addAdmin} newDoc={this.addDoctor} newPat={this.addPatient}/>
           </Route>
           <Route exact path="/doctor-login">
-            <DoctorLogin/>
+            <DoctorLogin getDocData={this.getDoctorLoginData} consultData={this.getConsultData}/>
           </Route>
           <Route exact path="/patient-login">
+<<<<<<< HEAD
             <PatientLogin appointmentData={this.getAppointData}/>
+=======
+            <PatientLogin getPatData={this.getPatientLoginData} appointData= {this.getAppointData}/>
+>>>>>>> fcdfa3fd1f70b434bdc477defa467bcd136efd84
           </Route>
   
         </Switch>

@@ -10,7 +10,11 @@ const Patient = (props) =>{
         <div>Room: <input type="Text" name="appointRoom"/></div>
         <div>Doctor's Name: <input type="Text" name="appointDoctor"/></div>
         <div>Reasons: <input type="Text" name="appointReasons"/></div>
+<<<<<<< HEAD
         <button onClick= {props.appointmentData} >Submit</button>
+=======
+        <button onClick={props.appointData}>Submit</button>
+>>>>>>> fcdfa3fd1f70b434bdc477defa467bcd136efd84
         </form>
         <h3>View previous appointments</h3>
         </div>

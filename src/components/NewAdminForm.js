@@ -1,4 +1,4 @@
-const NewAdminForm = () =>{
+const NewAdminForm = (props) =>{
     return(
         <div>
         <form className="new-admin-form">
@@ -18,7 +18,7 @@ const NewAdminForm = () =>{
           <div>Lot No.: <input type="Text" name="admLotNo"/></div>
           <div>Street: <input type="Text" name="admStreet"/></div>
           <div>City: <input type="Text" name="admCity"/></div>
-          <button>Sign Up</button>
+          <button onClick={props.newAdm}>Sign Up</button>
         </form>
     </div>
     )
