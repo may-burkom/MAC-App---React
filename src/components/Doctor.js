@@ -1,4 +1,4 @@
-const Doctor= () =>{
+const Doctor= (props) =>{
     return(
         <div>
 
@@ -23,7 +23,7 @@ const Doctor= () =>{
               <div>Consultation Summary: <textarea type="Text" name="consultReasons"/></div>
               <div>Attached file: <input type="Text" name="consultAttachedFile"/></div>
 
-              <button>Submit</button>
+              <button onClick={props.consultData}>Submit</button>
 
             </form>
             

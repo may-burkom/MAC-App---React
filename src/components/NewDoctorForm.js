@@ -1,4 +1,4 @@
-const NewDoctorForm = () => {
+const NewDoctorForm = (props) => {
     return(
         <div>
            <form className="new-doctor-form">
@@ -20,7 +20,7 @@ const NewDoctorForm = () => {
         <div>City: <input type="Text" name="docCity"/></div>
         <div>Licence Type: <input type="Text" name="docLicenceType"/></div>
         <div>Specialized Field: <input type="Text" name="docSpeciality"/></div>
-        <button>Submit</button>
+        <button onClick={props.newDoc}>Submit</button>
           </form>
         </div>
     )
