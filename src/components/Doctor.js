@@ -1,7 +1,6 @@
 const Doctor= (props) =>{
     return(
         <div>
-
            <button className="exit-button">Logout</button>
 
            <h3>Doctors Page</h3>
@@ -11,7 +10,6 @@ const Doctor= (props) =>{
            <div className="consultations"></div>
 
            <form className="consultation-form">
-
               <button className="exit-button">X</button>
 
               <h3>Add consultation</h3>
@@ -24,9 +22,7 @@ const Doctor= (props) =>{
               <div>Attached file: <input type="Text" name="consultAttachedFile"/></div>
 
               <button onClick={props.consultData}>Submit</button>
-
-            </form>
-            
+            </form>   
         </div>
     )
 }
