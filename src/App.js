@@ -40,7 +40,7 @@ class App extends Component {
       console.log("form data")      
       // Posting that data to our API     
       axios.post('http://localhost:3330/login-doctor', formData)
-  })
+    })
   }
 
   getAdminLoginData = () => {

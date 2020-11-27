@@ -9,10 +9,10 @@ const DoctorLogin = (props) => {
                     <h3>Login as a Doctor</h3>
                     <div>Username: <input type="Text" name="docUsername"/></div>
                     <div>Password: <input type="Text" name="docPassword"/></div>
-                    <div><Link to='/doctor-homepage'><button onClick={props.getDocData}>Login</button></Link></div>
+                    <div><Link to='/doctor-home'><button onClick={props.getDocData}>Login</button></Link></div>
                 </form>
                 <Switch>
-                    <Route exact path="/doctor-homepage">
+                    <Route exact path="/doctor-home">
                         <Doctor consultData= {props.consultData}/>
                     </Route>
                 </Switch>

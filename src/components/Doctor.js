@@ -18,7 +18,7 @@ const Doctor= (props) =>{
               <div>Date: <input type="Datetime-local" name="consultDate"/></div>
               <div>Room: <input type="Text" name="consultRoom"/></div>
               <div>Doctor's Name: <input type="Text" name="consultDoctor"/></div>
-              <div>Consultation Summary: <textarea type="Text" name="consultReasons"/></div>
+              <div>Consultation Summary: <textarea type="Text" name="consultSummary"/></div>
               <div>Attached file: <input type="Text" name="consultAttachedFile"/></div>
 
               <button onClick={props.consultData}>Submit</button>
