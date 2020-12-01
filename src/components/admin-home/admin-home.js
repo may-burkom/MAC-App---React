@@ -20,7 +20,31 @@ class App extends Component {
             var formData = new FormData(addDoctorForm)
             console.log("form data")
             // Posting that data to our API     
-            axios.post('ht/add-doctor', formData)
+            axios.post('http://localhost:3330/add-doctor', formData)
+        })
+    }
+
+    getNewAdminData = () => {
+        const addAdminForm = document.querySelector('.form1')
+        addAdminForm.addEventListener('submit', function (event) {
+          event.preventDefault()
+          console.log(event.target)
+          console.log("Submitting the new admin form")
+          var formData = new FormData(addAdminForm)
+          console.log(formData)
+          axios.post('http://localhost:3330/add-admin', formData)
+        })
+        }
+
+    getNewPatData = () => {
+        const addPatForm = document.querySelector('.form3')
+        addPatForm.addEventListener('submit', function(event){
+            event.preventDefault()
+            console.log(event.target)
+            console.log("Submitting the new patient form")
+            var formData = new FormData(addPatForm)
+            console.log(formData)
+            axios.post('http://localhost:3330/add-patient', formData)
         })
     }
 
