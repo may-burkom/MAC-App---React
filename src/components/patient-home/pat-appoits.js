@@ -1,7 +1,7 @@
 
 //import axios from "axios"
-  
-const Patient = () =>{
+import './css/appoinment.css'
+const Appointment = () =>{
     // Find appointment form 
     // const appointmentForm = document.querySelector('.appointment-form')
 
@@ -19,20 +19,39 @@ const Patient = () =>{
 
     return(
         <div>
-        <button className="exit-button">Logout</button>
-        <h3>Patient's Page</h3>
+            <div class="existing-appointment">
+                <div>
+                    <div>Doctor</div>
+                    <div>Dr Peter</div>
+                </div>
+                <div>
+                    <div>Date</div>
+                    <div>12/12/12</div>
+                </div>
+                <div>
+                    <div>Room</div>
+                    <div>e334</div>
+                </div>
+                <div >
+                    <div>Note</div>
+                    <div>lnxlnzn</div>
+                </div>
+            </div>
         <form className="appointment-form">
         <h3>Add new Appointment</h3>
-        <div>Patient Name: <input type="Text" name="appointPatName"/></div>
-        <div>Date: <input type="datetime-local" name="appointDate"/></div>
-        <div>Room: <input type="Text" name="appointRoom"/></div>
-        <div>Doctor's Name: <input type="Text" name="appointDoctor"/></div>
-        <div>Reasons: <input type="Text" name="appointReasons"/></div>
+        <div>Patient Name: </div>
+        <div> <input type="Text"name="appointPatName"/>
+        </div>
+        <div>Date:
+        </div>
+        <div><input type="date" name="appointDate"/></div>
+        <div>Room:</div><div> <input type="Text" name="appointRoom"/></div>
+        <div>Doctor's Name:</div><div>  <input type="Text" name="appointDoctor"/></div>
+        <div>Reasons: </div><div> <textarea type="Text" name="appointReasons"></textarea></div>
         <button>Submit</button>
         </form>
-        <h3>View previous appointments</h3>
         </div>
     )
 }
 
-export default Patient;
+export default Appointment;
