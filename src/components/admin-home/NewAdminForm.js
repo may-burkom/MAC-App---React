@@ -1,20 +1,5 @@
-  // Find the add new admin form 
-  // const addAdminForm = document.querySelector('.new-admin-form')
-  import "./css/new-admin.css"
-  // // Process the sumbission of the form 
-  // addAdminForm.addEventListener('submit', function (event) {
-  //   // Stopping the normal action of the form so that we can handle things here     
-  //   event.preventDefault()
-  //   console.log(event.target)
-  //   console.log("Submitting the new admin form")
-  //   var formData = new FormData(addAdminForm)
-  //   console.log("form data")
-  //   // Posting that data to our API     
-  //   axios.post('/admin/new', formData)
-  // })
-
+import "./css/new-admin.css"
   
-
 const NewAdminForm = (props) =>{
     
     return(

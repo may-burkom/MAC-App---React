@@ -9,7 +9,7 @@ import axios from 'axios'
 
 class App extends Component {
 
-    const = function getNewDoctorData() {
+    getNewDoctorData = () => {
         const addDoctorForm = document.querySelector('.new-doctor-form')
         
         addDoctorForm.addEventListener('submit', function (event) {
@@ -75,13 +75,13 @@ class App extends Component {
                 <div className="main-2">
                     <Switch>
                         <Route exact path="/new-admin">
-                             <NewAdminForm/>
+                             <NewAdminForm newAdmin= {this.getNewAdminData}/>
                         </Route>
                         <Route exact path="/new-doctor">
                             <NewDoctorForm newDoctor = {this.getNewDoctorData} />
                         </Route>
                         <Route exact path ="/new-patient">
-                            <NewPatientForm/>
+                            <NewPatientForm newPatient= {this.getNewPatData}/>
                         </Route>
                     </Switch>
                 </div>

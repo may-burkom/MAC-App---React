@@ -1,20 +1,4 @@
 import "./css/newPatientform.css"
-//import axios from "axios"
-//import {Form, Col, Button} from 'react-bootstrap'
-    // Find the add new patient form 
-    // const addPatientForm = document.querySelector('.new-patient-form')
-
-    // // Process the sumbission of the form 
-    // addPatientForm.addEventListener('submit', function (event) {
-    //     // Stopping the normal action of the form so that we can handle things here     
-    //     event.preventDefault()
-    //     console.log(event.target)
-    //     console.log("Submitting the new patient form")
-    //     var formData = new FormData(addPatientForm)
-    //     console.log("form data")
-    //     // Posting that data to our API     
-    //     axios.post('/add-patient', formData)
-    // })
 
 const NewPatientForm = (props) =>{
     return(
