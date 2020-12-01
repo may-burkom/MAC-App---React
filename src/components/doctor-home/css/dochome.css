@@ -1,0 +1,97 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.9fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1.9fr 0.6fr;
+  gap: 0px 0px;
+  background-image: url("./login-home.jpg");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.header { 
+  grid-area: 1 / 1  ;
+  background-color: black;
+}
+
+.header div{
+  background-color:darkgrey;
+  text-align: center;
+  margin-top: 3px;
+  border-radius: 0px 50px 50px 0px;
+  border-bottom: solid orange 4px;
+  border-left: black;
+}
+.header2 { 
+  grid-area: 1 / 2 / 2 / 5;
+  background-color: black;
+  color: orange;
+  opacity: .9;
+ }
+
+.content1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  font-size: x-large;
+  background-color:darkgray;
+  font-family: 'Times New Roman', Times, serif;
+  gap: 0px 0px;
+  grid-template-areas:
+    "patient patient patient"
+    "doctors doctors doctors"
+    "consultation consultation consultation"
+    "appoinments appoinments appoinments";
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.patient { 
+  grid-area: patient;
+  background-color: grey;
+  border-bottom: black 1px solid;
+ }
+
+.doctors { 
+  grid-area: doctors;
+  background-color: grey;
+  border-bottom: black 1px solid;
+}
+
+.consultation { 
+  grid-area: consultation; 
+  background-color: grey;
+  border-bottom: black 1px solid;
+}
+
+.appoinments { 
+  grid-area: appoinments;
+  background-color: grey;
+  border-bottom: black 1px solid;
+ }
+
+.mass-dis {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr;
+  gap: 0px 0px;
+  background-color:yellow;
+  grid-template-areas: ".";
+  grid-area: 2 / 2 / 3 / 4;
+}
+
+.appointments { 
+  grid-area: 2 / 4 / 3 / 5; 
+  background-color: brown
+}
+
+.footer { grid-area: 3 / 1 / 4 / 5; 
+  background-color:black;
+  opacity: 90%;
+  color: orange;
+  font-size: larger;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

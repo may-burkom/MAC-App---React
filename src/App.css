@@ -1,122 +1,57 @@
-header{
-  text-align: center;
-  color:purple;
-}
 
-h3,p{
-  font-size: large;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 30px;
-}
-
-.login-page{
-  /* background-image: url('./image/bimage1.jpg'); */
+.grid-container {
+  display: grid;
+  background-image: url("./components/admin-home/css/login-home.jpg");
+   height: 100%;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: 1400px 900px;
+  background-color: salmon;
+  grid-template-columns: 1fr 4fr ;
+  grid-template-rows: 1fr 1fr ;
+  gap: 0px 0px;
+  grid-template-areas:
+    "user-content body body body"
+    "user-content body body body";
 }
-
-.login-form{
-  text-align: center; 
-}
-
-.appointment-form, .consultation-form{
-  text-align:center;
-}
-
-button{
-  font-size: large;
-}
-
-.new-patient-form, .new-doctor-form, .new-admin-form{
-  float: left;
-}
-
-.exit-button{
-  display:flex;
-  float: right;
-  background-color: grey;
-}
-
-.side-bar{
-  text-align: left;
-  float: left;
-  justify-content: space-between;
-  word-spacing: 30px;
-  font-size: large;
-  overflow: hidden;
-  background-color: #333;
-  margin: 30px;
-  border: 1px solid black;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.nav-bar {
-  text-align: center;
-  justify-content: space-between;
-  word-spacing: 30px;
-  font-size: large;
-  overflow: hidden;
-  background-color: #333;
-  margin: 30px;
-  border: 1px solid black;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.nav-bar a {
-  float: center;
-  font-size: 16px;
+.user-content {
+   grid-area: user-content;
+   height: 900px;
+   opacity: 70%;
+   font-size: xx-large;
+   ;}
+.header { 
+  grid-area: header;
+  padding-top: 0%;
+ background-color: rebeccapurple;
+ font-size:medium; }
+.body{ 
+  grid-area: body;
+  margin: auto 0px;
+  border-radius: 5px;
+  height: 35px;
+  margin-top: 20px;
+  margin: 20px;
+  width: max-content;
+  font-size: small;
+  width: 400px;
   color: white;
+  opacity: 60%;
+  margin: auto 0px;
+  height: 500px;
+  border-radius: 50px;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  justify-content: space-between;
-  word-spacing: 100px;
-}
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px bold;
+  margin-left: 300px;}
+.content li{
+  float:left;
+  text-align-last: center;
+  list-style-type: none;
+  padding-right: 30px;
 
-.dropdown {
-  float: right;
-  overflow: hidden;
 }
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.nav-bar a:hover, .dropdown:hover .dropbtn {
-  background-color: purple;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
+li{
+  
+   list-style-type: none
 }

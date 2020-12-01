@@ -1,0 +1,150 @@
+form{
+    border-radius: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size:larger;
+}
+form h3{
+    text-align: center;
+}
+input{
+    border-radius: 2px;
+    height: 35px;
+    width: 150px;
+}
+button{
+    margin-top:50px ;
+    width: 150px;
+    background-color: lightskyblue;
+    border-radius: 5px ;
+    border: lightslategrey solid 1px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1.1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    gap: 0px 0px;
+    padding: 5px;
+    grid-template-areas:
+        "name in surname ins username insur password inpass"
+        "gender ingen dob indob weight inweig height inheight"
+        "email inma phone inphone city incity section insection"
+        "lot inlot street instreet . . . ."
+        ". . button button . . . .";
+}
+
+.name { 
+    grid-area: name;
+ }
+
+.in { 
+    grid-area: in; 
+}
+
+.surname { 
+    grid-area: surname; 
+}
+
+.ins { 
+    grid-area: ins; 
+}
+
+.username { 
+    grid-area: username; 
+}
+
+.insur { 
+    grid-area: insur; 
+}
+
+.password { 
+    grid-area: password; 
+}
+
+.inpass { 
+    grid-area: inpass; 
+}
+
+.gender { 
+    grid-area: gender; 
+}
+
+.ingen { 
+    grid-area: ingen; 
+}
+
+.dob { 
+    grid-area: dob; 
+}
+
+.indob { 
+    grid-area: indob; 
+}
+
+.weight { 
+    grid-area: weight; 
+}
+
+.inweig { 
+    grid-area: inweig; 
+}
+
+.height { 
+    grid-area: height; 
+}
+
+.inheight { 
+    grid-area: inheight; 
+}
+
+.email { 
+    grid-area: email; 
+}
+
+.inma { 
+    grid-area: inma; 
+}
+
+.phone { 
+    grid-area: phone; 
+}
+
+.inphone { 
+    grid-area: inphone; 
+}
+
+.city { 
+    grid-area: city; 
+}
+
+.incity { 
+    grid-area: incity; 
+}
+
+.section { 
+    grid-area: section; 
+}
+
+.insection { 
+    grid-area: insection; 
+}
+
+.lot { 
+    grid-area: lot; 
+}
+
+.inlot { 
+    grid-area: inlot; 
+}
+
+.street { 
+    grid-area: street; 
+}
+
+.instreet { 
+    grid-area: instreet; 
+}
+.button { 
+    grid-area: button; 
+}

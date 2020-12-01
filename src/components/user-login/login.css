@@ -1,0 +1,42 @@
+/* /* .loginforms{
+  background-color:black;
+  width: 400px;
+  color: white;
+  opacity: 80%;
+  margin: auto 0px;
+  height: 500px;
+  border-radius: 50px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px bold;
+  margin-left: 500px;
+} */
+
+div{
+  color: #000;
+  margin: auto 0px;
+  color: white;
+}
+
+button{
+  border-radius: 50px;
+  background-color: lightblue;
+  margin: auto 20px;
+  width: 200px;
+  margin-left: 100px;
+  font-size: medium;
+  font-family: serif;
+}
+
+input{
+  margin: auto 0px;
+  border-radius: 5px;
+  height: 35px;
+  margin-top: 20px;
+  margin: 20px;
+  width: max-content;
+ 
+}
+#username{
+  margin-top: 200px;
+}
