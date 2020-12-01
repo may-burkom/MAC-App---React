@@ -1,0 +1,21 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 1.6fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "patient-name room date"
+    "patient-display room-display date-display";
+}
+
+.patient-name { grid-area: patient-name; }
+
+.patient-display { grid-area: patient-display; }
+
+.room { grid-area: room; }
+
+.room-display { grid-area: room-display; }
+
+.date { grid-area: date; }
+
+.date-display { grid-area: date-display; }

@@ -4,8 +4,8 @@ import './index.css';
 import App from './App';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import reportWebVitals from './reportWebVitals';
-//import App from "./components/admin-home/admin-home"
 // import App from "./components/admin-home/admin-home"
+// import App from "./components/doctor-home/doctor-home"
 ReactDOM.render(
   <React.StrictMode>
     <App />

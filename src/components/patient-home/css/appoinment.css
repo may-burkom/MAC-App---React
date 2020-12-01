@@ -1,0 +1,36 @@
+.appointment-form {
+    font-size: x-large;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+}
+.appointment-form input {
+    width: 300px;
+    height: 40px;
+    border-left: orangered 5px solid;
+      border-right: orangered 5px solid;
+    border-radius: 10px 10px 10px 10px;
+}
+
+textarea{
+    width: 500px;
+    height: 200px;
+    border-left: orangered 5px solid;
+      border-right: orangered 5px solid;
+}
+button{
+    border-radius: 10px 10px 10px 10px;
+    width: 300px;
+    height: 50px;
+    background-color: lightseagreen;
+    margin-top: 10px;
+    margin-bottom: 40px;
+     font-size: x-large;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+}
+.existing-appointment{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 20px 20px 0px 0px;
+    border-top: white 1px solid;
+}

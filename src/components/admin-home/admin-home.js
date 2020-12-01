@@ -9,7 +9,7 @@ import axios from 'axios'
 
 class App extends Component {
 
-    const = function getNewDoctorData() {
+    getNewDoctorData = () => {
         const addDoctorForm = document.querySelector('.new-doctor-form')
         
         addDoctorForm.addEventListener('submit', function (event) {
@@ -21,6 +21,13 @@ class App extends Component {
             console.log("form data")
             // Posting that data to our API     
             axios.post('http://localhost:3330/add-doctor', formData)
+                .then(function(response){
+                    console.log(response.data)
+                    alert(`${response.data.doctorFullname} added successfully!`)
+                })
+                .catch((err)=>{console.log(err)})
+            
+            addDoctorForm.reset() 
         })
     }
 
@@ -33,8 +40,15 @@ class App extends Component {
           var formData = new FormData(addAdminForm)
           console.log(formData)
           axios.post('http://localhost:3330/add-admin', formData)
+            .then(function(response){
+                console.log(response.data)
+                alert(`${response.data.firstName} ${response.data.lastName} added successfully!`)
+            })
+            .catch((err)=>{console.log(err)})
+    
+            addAdminForm.reset() 
         })
-        }
+    }
 
     getNewPatData = () => {
         const addPatForm = document.querySelector('.form3')
@@ -45,6 +59,13 @@ class App extends Component {
             var formData = new FormData(addPatForm)
             console.log(formData)
             axios.post('http://localhost:3330/add-patient', formData)
+                .then(function(response){
+                    console.log(response.data)
+                    alert(`${response.data.patientFullname} added successfully!`)
+                })
+                .catch((err)=>{console.log(err)})
+        
+            addPatForm.reset()
         })
     }
 
@@ -75,13 +96,13 @@ class App extends Component {
                 <div className="main-2">
                     <Switch>
                         <Route exact path="/new-admin">
-                             <NewAdminForm/>
+                             <NewAdminForm newAdmin = {this.getNewAdminData}/>
                         </Route>
                         <Route exact path="/new-doctor">
                             <NewDoctorForm newDoctor = {this.getNewDoctorData} />
                         </Route>
                         <Route exact path ="/new-patient">
-                            <NewPatientForm/>
+                            <NewPatientForm newPatient = {this.getNewPatData}/>
                         </Route>
                     </Switch>
                 </div>

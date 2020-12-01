@@ -24,10 +24,10 @@ const DoctorLogin = () => {
         <div className="loginforms">
         <BrowserRouter>
         <form className="login-doctor-form">
-        <h3>Login as a Doctor</h3>
-        <div className="username">Username <input id="username" type="Text" name="docUsername" /><br></br> </div>
-        <div className="password">Password <input type="password" name="docPassword" /></div>
-        <div><Link to='/doctor-homepage'><button type="submit">Login</button></Link></div>
+            <h3>Login as a Doctor</h3>
+            <div className="username">Username <input id="username" type="Text" name="docUsername" /><br></br> </div>
+            <div className="password">Password <input type="password" name="docPassword" /></div>
+            <div><Link to='/doctor-homepage'><button type="submit">Login</button></Link></div>
         </form>
         <Switch>
             <Route exact path="/doctor-homepage">
