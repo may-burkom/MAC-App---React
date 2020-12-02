@@ -19,7 +19,7 @@ class App extends Component {
             var formData = new FormData(consultationForm)
             console.log("form data")
             // Posting that data to our API     
-            axios.post('/add-consultation', formData)
+            axios.post('http://localhost:3330/add-consultation', formData)
         })
     }
     render() {

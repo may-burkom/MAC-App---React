@@ -1,8 +1,7 @@
-
-
 import './css/new_consultation.css'
 
 const Consultation= (props) =>{
+    
     return(
         <div>
             <div class="grid-container2">
@@ -17,17 +16,19 @@ const Consultation= (props) =>{
                 <div class="display2"></div>
                 <div class="textarea">12312</div>
             </div>
-            <form className="new-doctor-form">
+            <form className="consultation-form">
                 <h3>new consultation</h3>
                     <div class="name">Doctors Name</div>
-                    <div class="in"><input></input></div>
+                    <div class="in"><input type="Text" name="consultDoctor"></input></div>
+                    <div class="pname">Patients Name</div>
+                    <div class="in"><input type="Text" name="consultPatient"></input></div>
                     <div class="date">Date</div>
-                    <div class="ins"><input></input></div>
+                    <div class="ins"><input type="Datetime-local" name="consultDate"></input></div>
                     <div class="room">Room</div>
-                    <div class="insur"><input></input></div>
+                    <div class="insur"><input type="Text" name="consultRoom"></input></div>
                     <div class="note">Note</div>
-                    <div class="inpass"><textarea></textarea></div>
-                    <div class="button"><button onClick={props.consultFormData}>Submit</button></div>
+                    <div class="inpass"><textarea type="Text" name="consultSummary"></textarea></div>
+                    <div class="button"><button onClick={props.newConsult}>Submit</button></div>
             </form>
             </div>
     )
